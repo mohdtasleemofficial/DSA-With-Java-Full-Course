@@ -1,0 +1,142 @@
+Q.1: Take a number n as input representing age of a person. Print "eligible" if the person is Eligible for driving license else Print "not eligible".
+
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        if (n>=18)
+        {
+            System.out.println("eligible");
+        }
+        else
+        {
+            System.out.println("not eligible");
+        }
+    }
+}
+
+
+Q.2: Take a number n as input representing Budget of trip. Print "goa" if the budget is greater than equal to 10000 else Print "murthal".
+
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        if(n>=10000)
+        {
+            System.out.println("goa");
+        }
+        else
+        {
+            System.out.println("murthal");
+        }
+    }
+}
+
+
+Q.3: Take a number n as input representing marks of a student. Print "pass" if the mark is greater than equal to 35 else Print "fail".
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        if(n>=35)
+        {
+            System.out.println("pass");
+        }
+        else
+        {
+            System.out.println("fail");
+        }
+    }
+}
+
+
+Q.4: Take a number n as input. Print "even" if the number is even else Print "odd".
+
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+
+    public static void main(String[] args) 
+    {
+       Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        
+        if(n%2==0)
+        {
+            System.out.println("even");
+        }
+        else
+        {
+            System.out.println("odd");
+        }
+    }
+}
+
+Q.5: Take a number n as input. Print "divisible" if the number is divisible by 2 or 3 else Print "not divisible".
+
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        
+        if(n%2==0 || n%3==0)
+        {
+            System.out.println("divisible");
+        }
+        else
+        {
+            System.out.println("not divisible");
+        }
+    }
+}
+
+Q.6: Take a number n as input. Print "divisible" if the number is divisible by 2 and 3 else Print "not divisible".
+
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        
+        if(n%2==0 && n%3==0)
+        {
+            System.out.println("divisible");
+        }
+        else
+        {
+            System.out.println("not divisible");
+        }
+    }
+}
