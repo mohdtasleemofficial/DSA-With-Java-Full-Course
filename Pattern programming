@@ -1,0 +1,217 @@
+Q.1: Write the programm following pattern.
+Input = 5
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int nst = 1;
+
+        for(int i=1;i<=n;i++){
+
+            for(int j=1;j<=nst;j++){
+                System.out.print("* ");
+            }
+            nst++;
+            System.out.println();
+        }
+    }
+}
+
+Q.2: Write the programm following pattern.
+Input = 5
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+import java.io.*;
+import java.util.*;
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int nst = 1;
+
+        int count = 1;
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=nst;j++)
+            {
+                System.out.print(count+" ");
+                count++;
+            }
+            nst++;
+            System.out.println();
+        }
+    }
+}
+
+Q.3: Write the programm following pattern.
+Input = 5
+
+  *
+ ***
+*****
+ ***
+  *
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+
+        int nspaces = n / 2;
+        int nstars = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= nspaces; j++)
+            {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= nstars; j++)
+            {
+                System.out.print("*");
+            }
+            if (i <= n / 2) {
+                nspaces--;
+                nstars += 2;
+            } else {
+                nspaces++;
+                nstars -= 2;
+            }
+            System.out.println();
+        }
+    }
+}
+
+Q.4: Write the programm following pattern.
+Input = 5
+
+*** ***
+**   **
+*     *
+**   **
+*** ***
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution
+{
+
+    public static void main(String[] args)
+    {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+
+        int nstars = n / 2 + 1;
+        int nspaces = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= nstars; j++)
+            {
+                System.out.print("*");
+            }
+            for (int j = 1; j <= nspaces; j++)
+            {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= nstars; j++)
+            {
+                System.out.print("*");
+            }
+            if (i <= n / 2) {
+                nspaces += 2;
+                nstars--;
+            } else {
+                nspaces -= 2;
+                nstars++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+Q.5: Write the programm following pattern.
+Input = 5
+
+    1 
+  2 3 2 
+3 4 5 4 3 
+  2 3 2 
+    1 
+
+import java.io.*;
+import java.util.*;
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+
+        int nst = 1;
+        int nsp = n / 2;
+
+        int val = 1;
+        for(int i=1;i<=n;i++){
+            for (int j = 0; j < nsp; j++)
+            {
+                System.out.print("  ");
+            }
+            if (i <= n / 2) {
+                val = i;
+            } else {
+                val = n + 1 - i;
+            }
+            for (int j = 0; j < nst; j++)
+            {
+                System.out.print(val + " ");
+
+                if (j < nst / 2)
+                {
+                    val++;
+                }
+                else
+                {
+                    val--;
+
+                }
+            }
+            if (i <= n / 2)
+            {
+                nsp--;
+                nst = nst + 2;
+            } else {
+                nsp++;
+                nst = nst - 2;
+            }
+            System.out.println();
+        }
+    }
+}
