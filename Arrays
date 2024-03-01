@@ -1,0 +1,68 @@
+Q.1: Create an array of length 5 with values 10 20 30 40 50. and How to print all the elements of Array?
+
+import java.util.Scanner;
+public class Solution 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+       int[] arr = new int[n];
+        
+        for(int i=0;i<n;i++)
+        {
+            arr [i] = sc.nextInt();
+        }
+        System.out.print("The Elements of array is : ");
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+
+Q.2: Read an array of n length and print the sum of all elements.
+
+import java.util.Scanner;
+public class Solution 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+       int[] arr = new int[n];
+        
+        for(int i=0;i<n;i++)
+        {
+            arr [i] = sc.nextInt();
+        }
+        int sum = 0;
+        for(int i=0;i<n;i++)
+        {
+            sum = sum+arr[i];
+        }
+        System.out.println("The Sum of all the elements of array is : "+sum);
+    }
+}
+
+Q.3: Swap the two values of array.
+
+public class Solution 
+{
+    public static void swap(int [] arr)
+    {
+        int temp = arr[0];
+        arr[0] = arr[1];
+        arr[1] = temp;
+    }
+    public static void main(String[] args)
+    {
+       int [] arr = {10,20};
+        swap(arr);
+        System.out.println(arr[0]+" "+arr[1]);
+    }
+}
+
+Q.4: 
