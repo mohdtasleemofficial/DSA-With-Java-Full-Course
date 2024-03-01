@@ -1,0 +1,163 @@
+Programm 1: Arithmetic
+
+public class Arithmetic
+{
+    public static void main(String[] args)
+    {
+        int x = 5;
+        int y = 2;
+        System.out.println(x+y);
+        System.out.println(x-y);
+        System.out.println(x*y);
+        System.out.println(x/y);
+        System.out.println(x%y);
+    }
+}
+
+Programm 2: Area of Circle
+
+public class AreaofCircle
+{
+    public static void main(String[] args)
+    {
+        double radius = 8;
+        double pi = 3.141;
+        double area = pi * radius * radius;
+        System.out.println("The Area of Circle is : ");
+        System.out.println(area);
+
+    }
+}
+
+Programm 3: Double datatype
+
+public class Doubledatatype
+{
+    public static void main(String[] args)
+    {
+        double x =11;
+        double y =2;
+        System.out.println(x+y);
+        System.out.println(x-y);
+        System.out.println(x*y);
+        System.out.println(x%y);
+        System.out.println(x/y);
+    }
+}
+
+Programm 4: Float Number
+
+import java.util.Scanner;
+
+public class FloatNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        float a = sc.nextFloat();
+        System.out.println("Enter 2nd Number");
+        float b = sc.nextFloat();
+
+        float d = a/b;
+        System.out.println(d+" ");
+        System.out.format("%.3f",d);
+    }
+}
+
+Programm 5: Increament Decreament
+
+public class Increamentdecreament
+{
+    public static void main(String[] args)
+    {
+        int x = 5;
+        x++;
+        System.out.println(x);
+        x--;
+        System.out.println(x);
+        ++x;
+        System.out.println(x);
+        --x;
+        System.out.println(x);
+    }
+}
+
+Programm 6: Percentage
+
+public class Percentage
+{
+    public static void main(String[] args)
+    {
+        double x1=100; // Maths
+        double x2=99;  // Hindi
+        double x3= 80; // English
+        double x4=90;  // Physics
+        double x5=90;  // Chemistry
+        double Percentage = (x1+x2+x3+x4+x5)/5;
+        System.out.println(Percentage);
+    }
+}
+
+Programm 7: Printing Numbers 
+
+public class PrintingNumbers 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("5");
+        System.out.println(5);
+        System.out.println(4+9);
+        System.out.println("4+9");
+    }
+}
+
+Programm 8: Simple Interest
+
+public class SimpleInterest
+{
+    public static void main(String[] args)
+    {
+        double Principal = 20000;
+        double Rate = 12;
+        double Time = 5;
+        double Simple_Interest = (Principal *Rate * Time)/100;
+        System.out.println("The Simple Interest is : "+Simple_Interest);
+
+    }
+}
+
+Programm 9: Sum of Two Numbers
+
+public class SumTwoNumbers
+{
+    public static void main(String[] args)
+    {
+        int x = 5;
+        int y = 6;
+        int sum = x+y;
+        System.out.println(sum);
+    }
+}
+
+Programm 10: Variables
+
+public class Variables 
+{
+    public static void main(String[] args)
+    {
+        int x=100;
+        System.out.println(x);
+
+        x=500;
+        System.out.println(x);
+
+        x=1000;
+        System.out.println(x);
+        System.out.println(x+500);
+        System.out.println(x-500);
+
+        x = x+200;
+        System.out.println(x);
+    }
+}
