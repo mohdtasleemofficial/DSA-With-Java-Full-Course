@@ -1,0 +1,78 @@
+Characters:
+A-Z  (Uper Case)
+a-z  (Lower Case)
+
+Special Characters:
+@ # $ Etc.
+
+Numbers: 
+0,1,2,3,4,5.......9
+
+Syntax:
+
+char ch = 'A'          char = type  ,  ch = name  ,  A = character
+
+ASCII:
+
+'A' = 65     'a' = 97   '0' = 48 
+'B' = 66     'b' = 98   '1' = 49
+.            .          .
+.            .          .
+.            .          .
+.            .          .
+.            .          .
+'Z' = 90     'z' = 122  '9' = 57
+
+Char Rules:
+1- You can do mathematicals operations on characters. answer will be integer.
+Example: System.out.println('A'+'B') = 131
+
+Examples:
+Q.1 
+public class Main {
+    public static void main(String[] args) 
+    {
+        char ch = 'A';
+        System.out.println(ch);
+    }
+}
+Output: A
+Q.2
+public class Main {
+    public static void main(String[] args) 
+    {
+        int ch = 'A';
+        ch = ch+2;
+        System.out.println(ch);
+    }
+}
+
+Output: 67
+Q.3
+public class Main {
+    public static void main(String[] args) 
+    {
+        char ch = (char)66;
+        System.out.println(ch);
+    }
+}
+Output: B
+Q.4
+public class Main {
+    public static void main(String[] args) 
+    {
+        char ch = 'A';
+        if(ch>=90)
+        {
+            System.out.println("Greater");
+        }
+        else
+        {
+            System.out.println("Smaller");
+        }
+    }
+}
+Output: Smaller
+
+
+
