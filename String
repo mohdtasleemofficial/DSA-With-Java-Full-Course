@@ -1,0 +1,11 @@
+String: Collection of characters is called String.
+
+Note:
+In String you can not change characters directly(Update not allowed).
+ Syntax:
+String st = "Shahjahanpur";
+
+
+
+Q.1: Given a char[] which contains only Small and capital letters toggle them.
+
