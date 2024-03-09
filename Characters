@@ -12,6 +12,8 @@ Syntax:
 
 char ch = 'A'          char = type  ,  ch = name  ,  A = character
 
+Input: char c = sc.next().charAt(0);
+
 ASCII:
 
 'A' = 65     'a' = 97   '0' = 48 
