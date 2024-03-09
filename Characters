@@ -60,10 +60,12 @@ public class Main {
 }
 Output: B
 Q.4
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) 
     {
-        char ch = 'A';
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
         if(ch>=90)
         {
             System.out.println("Greater");
@@ -74,7 +76,6 @@ public class Main {
         }
     }
 }
-Output: Smaller
 
 
 
