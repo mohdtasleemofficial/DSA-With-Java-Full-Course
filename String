@@ -7,5 +7,181 @@ String st = "Shahjahanpur";
 
 
 
-Q.1: Given a char[] which contains only Small and capital letters toggle them.
+1.Take as input String.
+Write a function that toggles the case of all characters in the string and then
+print that String.
+
+Example
+
+Input:
+AbCs
+
+output
+aBcS
+........................................
+import java.util.Scanner;
+public class Solution 
+{
+    public static void toggle(char[] ch)
+    {
+        for(int i = 0; i<ch.length; i++)
+        {
+            if(ch[i]>=65 && ch[i]<=90)
+            {
+                ch[i] = (char)(ch[i]+32);
+            }
+            else
+            {
+                ch[i] = (char)(ch[i]-32);
+            }
+        }
+    }
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        String st = sc.nextLine();
+        
+        char[] ch = st.toCharArray();
+        // Function Call
+        toggle(ch);
+        for(int i=0; i<ch.length;i++)
+        {
+            System.out.print(ch[i]);
+        }
+    }
+}
+
+2.Take as input String.
+Write a function that reverses the string and then print that String.
+
+import java.util.Scanner;
+public class Solution 
+{
+    public static void reverse(char[] ch)
+    {
+        int sp = 0;
+        int ep = ch.length-1;
+        
+        while(sp<ep)
+        {
+            char temp = ch[sp];
+            ch[sp] = ch[ep];
+            ch[ep] = temp;
+            sp++;
+            ep--;
+        }
+    }
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        String st = sc.nextLine();
+        
+        char[] ch = st.toCharArray();
+        // Function Call
+        reverse(ch);
+        for(int i=0; i<ch.length;i++)
+        {
+            System.out.print(ch[i]);
+        }
+    }
+}
+
+3.Take as input String.
+
+Write a code that inserts between each pair of characters the difference
+between their ascii codes. Print the final string.
+
+Note: You can use adding at the end of the string
+
+Example:
+
+Input:
+abfk
+
+output
+a1b4f5k
+
+1 = b-a
+4 = f-b
+5 = k-f
+..................................................
+import java.util.Scanner;
+public class Solution 
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner scn=new Scanner(System.in);
+		String st=scn.nextLine();
+		System.out.println(insert(st));
+	}
+	private static String insert(String st) 
+    {
+		String ans = "";
+		
+		for(int i=0;i<st.length()-1;i++)
+        {
+			char ch1 = st.charAt(i);
+			ans = ans + ch1;
+			int temp = st.charAt(i+1)-st.charAt(i);
+			ans = ans + temp;
+		}
+        ans = ans + st.charAt(st.length()-1);
+        return ans;
+    }
+}
+
+4.Take as input String.
+
+Write a Function to Check whether it is palindrome or not. if yes print true
+otherwise false. Palindrome means string and it's reversed form are same
+
+please Note: Lower and Upper case letter treated as equal.
+
+
+Example(To be used only for expected output):
+
+Input:
+aBcba
+
+output
+true
+......................................................
+import java.util.Scanner;
+public class Solution 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scn=new Scanner(System.in);
+        String st=scn.nextLine();
+        int n = st.length();
+        
+        char[] arr = new char[n];
+        for(int i=0;i<n;i++){
+            if(st.charAt(i)>='A' && st.charAt(i)<='Z')
+            {
+                arr[i] = (char)(st.charAt(i) + 32);
+            }else{
+                arr[i] = st.charAt(i);
+            }
+        }
+        int sp = 0;
+        int ep = n-1;
+        
+        while(sp<ep){
+            if(arr[sp]!= arr[ep])
+            {
+                System.out.println("false");
+                return;
+            }
+            
+            sp++;
+            ep--;
+        }
+        
+        System.out.println("true");
+    }
+}
+
+
 
